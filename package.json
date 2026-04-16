@@ -1,4 +1,3 @@
-cat > package.json << 'EOF'
 {
   "name": "user-management-system",
   "version": "1.0.0",
@@ -10,4 +9,3 @@ cat > package.json << 'EOF'
     "dev:backend": "cd backend && npm run dev"
   }
 }
-EOF
