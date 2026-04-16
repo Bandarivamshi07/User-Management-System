@@ -1,8 +1,10 @@
-echo "20.19.0" > frontend/.nvmrc# Make sure you're at repo root
+# Go to repo root
 cd "C:\Users\vamsh\OneDrive\User Management System"
 
-# Create .nvmrc at root
-echo "20.19.0" > .nvmrc
+# Create .nvmrc with ONLY the version
+@"
+20.19.0
+"@ | Out-File -Encoding utf8 .nvmrc
 
-# Verify it's there
+# Verify it
 type .nvmrc
