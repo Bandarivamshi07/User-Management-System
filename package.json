@@ -1,0 +1,20 @@
+# Make sure you're in the repo root
+cd "C:\Users\vamsh\OneDrive\User Management System"
+
+# Create root package.json
+cat > package.json << 'EOF'
+{
+  "name": "user-management-system",
+  "version": "1.0.0",
+  "description": "User Management System - Full Stack",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev"
+  }
+}
+EOF
+
+# Verify it was created
+type package.json
