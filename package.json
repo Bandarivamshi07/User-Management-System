@@ -1,7 +1,3 @@
-# Make sure you're in the repo root
-cd "C:\Users\vamsh\OneDrive\User Management System"
-
-# Create root package.json
 cat > package.json << 'EOF'
 {
   "name": "user-management-system",
@@ -15,6 +11,3 @@ cat > package.json << 'EOF'
   }
 }
 EOF
-
-# Verify it was created
-type package.json
